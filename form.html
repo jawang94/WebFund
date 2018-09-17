@@ -1,39 +1,48 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Dopest Form Ever</title>
     <style type="text/css">
-    /*Basic Styling and Objects*/
+        /*Basic Styling and Objects*/
         p {
             color: red;
         }
+
         [type="date"] {
-            background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+            background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 97% 50% no-repeat;
         }
+
         [type="date"]::-webkit-inner-spin-button {
             display: none;
         }
+
         [type="date"]::-webkit-calendar-picker-indicator {
             opacity: 0;
         }
 
-    /*Dope Styling*/
+        /*Dope Styling*/
         body {
             padding: 4em;
             background: #e5e5e5;
             font: 13px/1.4 Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-            }
+        }
+
         label {
             display: block;
-            }
-        input,textarea, select {
+        }
+
+        input,
+        textarea,
+        select {
             border: 1px solid #c4c4c4;
             border-radius: 5px;
             background-color: #fff;
             padding: 3px 5px;
-            box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+            box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
             width: 190px;
         }
+
         select {
             display: block;
             position: relative;
@@ -46,7 +55,7 @@
 <body>
     <h1>Dopest Form Ever</h1>
 
-    <form>    
+    <form>
         <p>Please Register:</p>
         <label>
             First Name:<input type="text" name="name">
@@ -68,13 +77,13 @@
         </label>
         <p>Select your gender:</p>
         <label>
-           Male<input type="radio" name="gender" value="male"> 
+            Male<input type="radio" name="gender" value="male">
         </label>
         <label>
-           Female<input type="radio" name="gender" value="female">
+            Female<input type="radio" name="gender" value="female">
         </label>
         <label>
-           Prefer not to say<input type="radio" name="gender" value="decline">
+            Prefer not to say<input type="radio" name="gender" value="decline">
         </label>
         <p>A short description about yourself:</p>
         <textarea name="description"></textarea>
@@ -87,9 +96,11 @@
             <option value="C++">C++</option>
             <option value="C#">C#</option>
             <option value="Swift">C</option>
-            <option value="SQL">SQL<option>
+            <option value="SQL">SQL
+                <option>
         </select>>
         <input type="submit" value="Click here to register">
-    </form> 
+    </form>
 </body>
+
 </html>
