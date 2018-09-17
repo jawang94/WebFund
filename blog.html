@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jason Wang's Blog</title>
+    <meta charset="utf-8">
+    <meta name="description" content="A fake blog created by a Jason Wang, a bootcamp student, utilizing stricly HTML and CSS.">
+    <style type="text/css">
+    /*Text Styling*/
+        p {
+            display: block
+        }
+        #blogtext {
+            text-align: justify;
+            width: 600px;
+        }
+
+    /*Body Styling*/
+        body {
+            padding: 4em;
+            background: #e5e5e5;
+            font: 14px/1.5 Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+            }
+        label {
+            display: block;            
+            }
+        input {
+            border: 5px solid #c4c4c4;
+            border-radius: 5px;
+            background-color: #fff;
+            padding: 5px 5px;
+            box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+            width: 250px;
+        }
+    /*Table Styling*/
+            table {
+            border: 2px solid #555;
+            border-collapse: collapse;
+            font: 16px "Lucida Grande", "Helvetica", "Arial", sans-serif;
+            }
+        th, td {
+            border: 1px solid #bbb;
+            padding: 2px 8px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="font-size: 40px">Jason Wang</h1>
+    <img src="theboys.png" alt="Picture of some Asian boys" width="400" height="400"/>
+
+    <div id="blogs">
+        <p class="blogone">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod volutpat ligula at semper. Nunc non urna faucibus, venenatis sem eu, sodales enim. Ut eu lectus sit amet massa vestibulum consequat ut in nibh. Vestibulum vel orci tempus, tempus felis ac, iaculis tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam eget lacus erat. Phasellus sit amet libero a neque molestie consectetur. Duis ornare faucibus volutpat. Ut dictum velit sit amet porttitor placerat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc varius nisl vitae ex suscipit, at tempus elit eleifend. Etiam quis vestibulum mauris, id ornare ligula. Morbi accumsan feugiat turpis non ornare.
+        </p>
+    </div>
+    
+    <div id="tables">
+        <h2>USTA Results by Year</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Matches Played</th>
+                    <th>Matches Won</th>
+                    <th>Matches Lost</th>
+                    <th>State Ranking</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr></tr>
+                    <td>2009</td>
+                    <td>18</td>
+                    <td>2</td>
+                    <td>16</td>
+                    <td>1012</td>
+                </tr>
+                <tr>
+                    <td>2010</td>
+                    <td>12</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>603</td>
+                </tr>
+                <tr>
+                    <td>2011</td>
+                    <td>21</td>
+                    <td>9</td>
+                    <td>11</td>
+                    <td>312</td>
+                </tr>
+                <tr>
+                    <td>2012</td>
+                    <td>31</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>118</td>
+                </tr>
+                <tr>
+                    <td>2013</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>455</td>
+                </tr>
+                <tr>
+                    <td>2014</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>877</td>
+                </tr>
+                <tr>
+                    <td>2015</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1272</td>
+                </tr>
+                <tr>
+                    <td>2016</td>
+                    <td>18</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>2017</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>2018</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>N/A</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="lists">
+        <ul>
+            <li>2011: Most Improved Player of the Year</li>
+            <li>2012: Most Improved Player of the Year</li>
+            <li>2012: Captain's Award</li>
+        </ul>
+    </div>
+
+    <a href="https://www.youtube.com/watch?v=mFIOGpIQtVU&t=157s">Click for match highlights!</a>
+
+    <div id="survey">
+        <form>    
+            <h3>Please take this short survey:</h3>
+                Email:<input type="email" name="email">
+            </label>
+            <label>
+                Yes, blow up my email on the daily.<input type="radio" name="email" value="yes"> 
+            </label>
+            <label>
+                No, don't send me any emails.<input type="radio" name="email" value="no"> 
+            </label>
+
+            <h3>How did you hear about us?</h3>
+            <label for="browser">Browser Search</label>
+            <input type="checkbox" id="browser" name="browser" value="browser">
+            <label for="socialmedia">Social Media</label>
+            <input type="checkbox" id="socialmedia" name="socialmedia" value="socialmedia">
+            <label for="Referral">Referral</label>
+            <input type="checkbox" id="referral" name="referral" value="referral">
+    
+            <label>
+                <input type="submit" value="Click here to register">
+            </label>
+        </form> 
+    </div>
+</body>
+</html>
