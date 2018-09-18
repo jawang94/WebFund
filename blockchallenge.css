@@ -1,0 +1,33 @@
+/*CSS reset settings here*/
+*{
+    margin: 10px;
+    padding: 10px;
+    background: beige;
+}
+
+h1 {
+    position: absolute;
+    left: 600px;
+    align-content: center;
+}
+
+body {
+    width: 1000px;
+}
+img {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+}
+
+#row {
+    clear: both;
+    display: -ms-inline-grid
+}
+
+#column {
+    float: left;
+    width: 5%;
+    padding: 5px;
+    display: inline-table;
+}
