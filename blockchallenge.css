@@ -7,36 +7,42 @@
 
 h1 {
     position: absolute;
-    left: 300px;
+    left: 340px;
     top: 80px;
 }
 
 #headerimage {
     position: absolute;
-    left: 150px;
+    left: 190px;
 }
 
 #headerimage2 {
     position: absolute;
-    left: 575px;
+    left: 615px;
+    background-color: transparent;
+
 }
 
 .head {
     height: 40px;
     width: 100px;
+    background-color: transparent;
+
 }
+
 
 img {
     height: 100px;
     width: 100px;
-    background-color: white;
     float: left;    
+    background-color: red;
+
 }
 
 #column {
     height: 150px;
     width: 120px;
-    float: left;
+    display: inline-block;
     margin-top: 100px;
 }
 
@@ -49,7 +55,7 @@ img {
 
 .picture {
     padding: 1px;
-    background-color: skyblue;
+    background-color: red;
     margin-top: 50;
     float: left;
 }
@@ -59,4 +65,5 @@ img {
     float: left;
     background-color: skyblue;
     margin-top: 50;
+    position: static;
 }

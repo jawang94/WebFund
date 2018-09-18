@@ -1,0 +1,92 @@
+#wrapper {
+    background-color: darkblue;
+    padding: 5px;
+    width: 1500px;
+    height: 970px;
+    background-blend-mode: hue;
+}
+
+#title {
+    background-color: red;
+    width: 1190px;
+    height: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    color: gainsboro;
+    font-size: 24px;
+    padding: 20px;
+    display: block;
+    margin: 15px;
+    text-align: left, justify;
+    padding-bottom: 30px;
+}
+
+#list {
+    display: inline-block;
+    background-color: lightcyan;
+    padding: 0px;
+    margin: 10px;
+    width: 200px;
+    height: 250px;
+    vertical-align: 2850%
+}
+
+#body {
+    background-color: black;
+    width: 1000px;
+    height: 700px; 
+    padding: 10px;
+    margin: 10px;
+    margin-left: 0px;
+    display: inline-block;
+}
+#bodyhead {
+    width: 900px;
+    height: 100px;
+    background: transparent;
+    display: inline-block;
+    color: white;
+    text-align: justify;
+    margin-left: 30px;
+}
+
+#bodytext {
+    width: 900px;
+    height: 700px;
+    background: transparent;
+    display: inline-block;
+    color: white;
+    text-align: justify;
+    line-height: 11px;
+}
+
+ul,
+h6 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    text-align: left;
+    color: darkturquoise;
+}
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    text-align: left;
+    color: white;
+}
+
+#special {
+    display: inline;
+}
+
+#unordered {
+    text-align: left;
+    display: inline;  
+}
+
+#unordered2 {
+    text-align: left;
+    display: inline-block;  
+}
+
+
+
