@@ -58,18 +58,20 @@
     #about .bar {
         background-image: linear-gradient(grey,lightgrey);
         color:white;
-        font-size: 20px;
+        font-size: 25px;
         height: 40px;
         padding-top: 10px;
+        padding-left: 3px;
         border: 1px solid #555;
         border-collapse: collapse; 
     }
 
     #about .box {
-        font-size: 50px;
-        text-align: center;
+        font-size: 15px;
+        text-align: justify;
         background-image: linear-gradient(to right,skyblue,aliceblue);
-        height: 220px;
+        height: 201px;
+        padding: 10px;
     }
 
 #middle {
@@ -83,16 +85,18 @@
         display: inline-block;
         height: 350px;
         width: 280px;
-        margin: 33px;
+        margin: 30px 35px 32px 31px;
         margin-bottom: 0px;
+        vertical-align: bottom;
     }
 
         #middle .body .bar{
             background-image: linear-gradient(grey,lightgrey);
             color: white;
-            font-size: 20px;
+            font-size: 22px;
             height: 40px;
             padding-top: 10px;
+            padding-left: 5px;
             border: 1px solid #555;
             border-collapse: collapse; 
             font-weight: 900;
@@ -115,6 +119,9 @@
             width: auto;
             background-image: linear-gradient(to right,skyblue,aliceblue);
             margin-top: 50px;
+            font-size: 9px;
+            text-align: justify;
+            padding: 3px;
         }
 
 
@@ -141,9 +148,11 @@
         font-size: 20px;
         height: 30px;
         padding-top: 10px;
+        padding-left: 5px;
         border: 1px solid #555;
         border-collapse: collapse;  
         font-weight: 900;  
+
     }
 
     #bottom .foot .images {
