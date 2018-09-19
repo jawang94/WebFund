@@ -1,0 +1,181 @@
+* {
+    /* outline: 1px solid pink; */
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+#container {
+    background-image: linear-gradient(purple, red);
+    height: 900px;
+    width: 1050px;
+    padding: 20px;
+}
+
+#header {
+    background: lightgray;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    display: inline-block;
+    min-height: 50px;
+    width: 1089px;
+}
+    #header .headertext1 {
+        padding-top: 20px;
+        display: inline-block;
+        font-size: 30px;
+        font-weight: 800;
+        margin: 0px 25px 
+    }
+    #header .headertext2 {
+        padding-bottom: 20px;
+        display: inline-block;
+        padding-left: 500px;
+    }
+
+#image {
+    display: inline;
+}
+    #image .profilepic {
+        max-width: 400px;
+        max-height: 350px;
+        border: 5px solid lightgray;
+        vertical-align: top;
+    }
+
+#about {
+    width: 600px;
+    height: 270px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+    #about .bar {
+        background-image: linear-gradient(grey,lightgrey);
+        color:white;
+        font-size: 20px;
+        height: 40px;
+        padding-top: 10px;
+        border: 1px solid #555;
+        border-collapse: collapse; 
+    }
+
+    #about .box {
+        font-size: 50px;
+        text-align: center;
+        background-image: linear-gradient(to right,skyblue,aliceblue);
+        height: 220px;
+    }
+
+#middle {
+    display: block;
+    width: auto;
+    min-height: 400px;
+    margin-bottom: 0;
+}
+
+    #middle .body {
+        display: inline-block;
+        height: 350px;
+        width: 280px;
+        margin: 33px;
+        margin-bottom: 0px;
+    }
+
+        #middle .body .bar{
+            background-image: linear-gradient(grey,lightgrey);
+            color: white;
+            font-size: 20px;
+            height: 40px;
+            padding-top: 10px;
+            border: 1px solid #555;
+            border-collapse: collapse; 
+            font-weight: 900;
+        }
+
+        #middle .body .image {
+            vertical-align: top;
+            height: 100px;
+            width: auto;
+            background-image: linear-gradient(to right,skyblue,aliceblue);
+        }
+
+            #middle .body .image .picture {
+                height: 150px;
+                width: 280px;
+            }
+
+        #middle .body .box {
+            height: 165px;
+            width: auto;
+            background-image: linear-gradient(to right,skyblue,aliceblue);
+            margin-top: 50px;
+        }
+
+
+#bottom {
+    display: inline-block;;
+    width: auto;
+    min-height: 200px;
+    vertical-align: top;
+
+}
+
+    #bottom .foot {
+        display: inline-block;
+        height: 200px;
+        width: 280px;
+        vertical-align: top;
+        margin-left: 30px;
+        margin-right: 37px;
+    }
+
+    #bottom .foot .bar {
+        background-image: linear-gradient(grey,lightgrey);
+        color: white;
+        font-size: 20px;
+        height: 30px;
+        padding-top: 10px;
+        border: 1px solid #555;
+        border-collapse: collapse;  
+        font-weight: 900;  
+    }
+
+    #bottom .foot .images {
+        background-image: linear-gradient(to right,skyblue,aliceblue);
+        height: 110px;
+    }
+
+        #bottom .foot .images .picture {
+            display: inline-block;
+            height: 38px;
+            width: 38px;
+            padding: 3px;
+            margin: 4px 1px 2px 6px;
+        }
+
+    #bottom .foot .button {
+        background-image: linear-gradient(to right,skyblue,aliceblue);
+        text-align: center;      
+        height: 30px;  
+        font-size: 20px;
+        padding-top: 10px;
+        text-decoration: none;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);    
+    }
+
+        #bottom .foot .button a {
+            background-color: green;
+            color: white;
+            box-shadow: 50%;
+            border: 1px solid black;
+            border-radius: 25px; 
+            font-size: 20px;
+            text-decoration: none;
+            
+        }
