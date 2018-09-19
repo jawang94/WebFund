@@ -72,7 +72,7 @@
                         display: inline-block;
                     }
 
-                        input {
+                        #container #top #intro #search #searchbar input {
                             height: 30px;
                             width: 200px;
                             text-align: center;
@@ -95,7 +95,7 @@
                         margin-top: 5px;
                     }
 
-                        #go a {
+                        #container #top #intro #search #go a {
                             color: white;
                             font-size: 18px;
                             margin-left: 6px;
