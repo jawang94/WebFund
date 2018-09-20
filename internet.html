@@ -13,7 +13,7 @@
             <img src="Internet_images/globe.png" alt="globe">
             <div id="text">
                 <h1 class="darkgrey">The Inter</h1>
-                <h1 class="darkblue">net</h1>
+                <h1><mark class="darkblue">net</mark></h1>
             </div>
             <div id="titlebar">
                 <h2>The World Wide Web</h2>
@@ -37,7 +37,47 @@
                 </div>
             </div>
         </div>
-        <div id="body"></div>
+        <div id="body">
+            <div id="dns">
+                <img src="Internet_images/home.png" alt="home">
+                <p>DNS</p>
+                <div id="phone">
+                    <img src="Internet_images/phone.png"phone">
+                    <div id="phonetext">
+                        <p>Mon-Fri 9a.m. - 5p.m.(EST)</p>
+                        <h3>855.967.3787</3>
+                        <h6>International +1.617.963.0555</h6>
+                    </div>
+                </div>
+            </div>
+            <div id="clientsandservers">
+                <h1>Clients and Servers</h1>
+                <p>Computers connected to the <mark class="lightblue">Web</mark> are called <b>clients</b> and <b>servers</b>.</p>
+                <ul>
+                    <li><mark class="lightblue">Clients</mark> are the typical Web user's Internet-connected devices (for example, your computer connected to your Wi-Fi, or your phone connected to your mobile network) and <mark class="lightblue">Web-accessing software</mark> available on those devices (usually a web browser like firefox or Chrome).</li>
+                    <li><mark class="lightblue">Servers</mark> are computers that store <mark class="lightblue">webpages</mark>, <mark class="lightblue">sites</mark>, or <mark class="lightblue">apps</mark>. When a client device wants to access a webpage, a copy of the webpage is downloaded from the server onto the client machine to be displayed in the user's web browser.</li>
+                </ul>
+                <img src="Internet_images/client_server.jpg" alt="clientserver">                
+            </div>
+            <div id="whatactually">
+                <h1>So What Actually Happens?</h1>
+                <ol>
+                    <li>The browser goes to the <mark class="lightblue">DNS server</mark> and finds the real address of the <mark class="lightblue">server</mark> that the website lives on.</li>
+                    <li>The browser sends an <mark class="lightblue">HTTP request</mark> message to the server asking it to send a copy of the website to the client.</li>
+                    <li>If the server approves the client's request, the server sends the client a <mark class="lightblue">"200 OK" message</mark>, which means "Permission granted! Here you go!", and then starts sending the website's files to the browser as a series of small chunks.</li>
+                    <li>The browser assembles the small chunks into a complete website and displays it to you.</li>
+                </ol>
+            </div>
+            <div id="big3">
+                <img src="Internet_images/html.png" alt="html">
+                <div id="big3text">
+                    <h1>The Big 3 - HTML, CSS, Javascript</h1>
+                    <p>While the server can process information in many different languages, the files that they serve to the client are <i>always</i> going to be some combination of HTML, CSS, and JavaScript!</p>
+                    <p>Learn more about the Big 3</p>
+                    <a href=""><mark class="lightblue">here!</mark></a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
