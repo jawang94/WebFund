@@ -1,0 +1,168 @@
+* {
+    outline: 1px solid pink;
+}
+
+#container {
+    background-color: white;
+    width: 1000px;
+    height: 900px;
+}
+
+mark.red {
+    color: red;
+}
+mark.darkblue {
+    color: rgb(52,101,154);
+}
+.darkbluegradient {
+    color: rgb(84,122,162)
+}
+.orange {
+    color: rgb(225, 132, 42)
+}
+.lightblue {
+    color: rgb(77, 187, 216)
+}
+.darkgrey {
+    color: rgb(71,71,71)
+}
+
+    #container #top {
+        width: 1000px;
+        height: 200px;
+        display: inline-block;
+        padding-bottom: 15px;
+    }
+
+        #container #top img {
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            position: fixed;
+            margin-top: 20px;
+        }
+
+        #container #top #text {
+            height: 90px;
+            width: 300px;;
+            display: inline-block;
+            vertical-align: top;
+            margin: 60px 0px 0px 150px;
+        }
+
+            #container #top #text h1 {
+                display: inline-block;
+                font-size: 40px;
+            }
+            #container #top #titlebar h2 {
+                display: inline-block;
+                background-image: linear-gradient(#34659A,#547AA2);
+                width: 980px;
+                height: 50px;
+                color: white;
+                font-size: 35px;
+                vertical-align: top;
+                margin-top: 0px;
+                padding: 15px 5px 5px 15px;
+                border-radius: 10px;
+            }
+            
+
+    #left {
+        background-color: green;
+        width: 250px;
+        height: 700px;
+        display: inline-block;
+        vertical-align: top;
+
+    }
+
+        #left #sidetop {
+            height: 100px;
+            width: 250px;
+            vertical-align: top;
+            display: inline-block;
+        }
+
+            #left #sidetop #sidetoptext {
+                display: inline-block;
+                width: auto;
+                height: auto;
+                margin-left: 5px;
+            }
+            h3 {
+                width: 190px;
+                height: 20px;
+                display: inline-block;
+                padding: 2px;
+                margin-bottom: 1px;
+            }
+            p {
+                font-weight: bold;
+            }
+
+            #left #sidetop #sidetopbuttons {
+                width: 250px;
+                height: 110px;
+                vertical-align: top;
+                display: inline-block;
+                border-bottom: 1px solid black;
+            }   
+            a {
+                display: block;
+                width: 200px;
+                height: 20px;
+                text-align: center;
+                padding: 10px;
+                margin: 0px 5px 5px 15px;
+                border-radius: 10px;
+                color: white;
+                text-decoration: none;
+            }
+            #button1 {
+                background-color: rgb(52,101,154);
+            }
+            #button2 {
+                background-color: rgb(225, 132, 42);
+            }
+            
+        #left #sidebottom {
+            background-color: black;
+            height: 400px;
+            width: 250px;
+            vertical-align: top;
+            display: inline-block;
+        }    
+
+            #left #sidebottom h1 {
+                color: white;
+                text-align: center;
+                font-size: 30px;
+            }
+
+            #left #sidebottom img {
+                display: inline-block;
+                width: auto;
+                height: 150px;
+            }
+
+            #left #sidebottom a {
+                display: block;
+                width: 150px;
+                height: 20px;
+                text-align: center;
+                padding: 10px;
+                margin: 0px 5px 5px 35px;
+                border-radius: 10px;
+                color: white;
+                text-decoration: none;
+                background-color: rgb(77, 187, 216);
+            }
+
+    #body {
+        background-color: blue;
+        width: 740px;
+        height: 700px;
+        display: inline-block;
+    
+    }
