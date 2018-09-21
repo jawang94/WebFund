@@ -1,0 +1,64 @@
+* {
+    /* outline: 1px solid pink; */
+    box-sizing: border-box;
+}
+
+#container {
+    background-color: aliceblue;
+    padding: 20px;
+    margin: 0% 20%;
+}
+
+.item {
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+    width: 100%;
+
+}
+
+.one {
+    font-size: 40px;
+    color: black;
+    background-color: grey;
+    padding: 10px;
+}
+
+.two {
+    background-color: lightgray;
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.three {
+    background-color: yellow;
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.row {
+    /* border: 1px solid blue; */
+    width: 100%;
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .sm-4 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .med-2 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .lg-1 {
+        width: 100%;
+    }
+}
