@@ -59,3 +59,40 @@ let x = [5]
 secondToLast(x, 3);
 
 //6 Array: Second-Largest
+const secondLargest = arr => {
+    let max = 0;
+    let secondLargest = 0;
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] < max) {
+            secondLargest = arr[i];
+        }
+    }
+    return secondLargest;
+}
+let x = [1, 2, 3, 4, 5];
+secondLargest(x);
+
+//7 Double Trouble
+const doubleTrouble = arr => {
+    let arrDoubled = [];
+    for(var i=0;i<arr.length;i++){
+        arrDoubled.push(arr[i]);
+        arrDoubled.push(arr[i]);
+    }
+    return arrDoubled;
+}
+let x = [1,2,3,4,5];
+doubleTrouble(x);
+
+//7 Double Trouble v2
+function doubleValues(array) {
+    return array.concat.apply([], array.map(function (el) { return [el, el] }));
+ }
+ let x = [1,2,3,4,5];
+ console.log(doubleValues(x));
+ 
