@@ -90,15 +90,99 @@ evensAndOdds(x);
 
 //7
 const incrementTheSeconds = arr => {
-    for(var i=0;i<arr.length;i++){
-        if(i%2!==0){
-            arr[i] = arr[i]+1;
+    for (var i = 0; i < arr.length; i++) {
+        if (i % 2 !== 0) {
+            arr[i] = arr[i] + 1;
         }
         console.log(arr[i]);
     }
     return arr;
 }
-let x = [1,2,3,4,5];
+let x = [1, 2, 3, 4, 5];
 incrementTheSeconds(x);
 
 //8
+const previousLengths = arr => {
+    for (var i = 1; i < arr.length; i++) {
+        arr[i] = arr[i - 1].length;
+    }
+    return arr;
+}
+let arr = ["hello", "dojo", "awesome"];
+previousLengths(arr);
+
+//9
+const addSevenToMost = arr => {
+    let newarr = [];
+    for (var i = 1; i < arr.length; i++) {
+        newarr.push(arr[i] + 7);
+    }
+    return newarr;
+}
+let x = [1, 2, 3, 4, 5];
+addSevenToMost(x);
+
+//10
+const reverseArr = arr => {
+    let temp = 0;
+    for (var i = 0; i < arr.length / 2; i++) {
+        temp = arr[i];
+        arr[i] = arr[arr.length - 1 - i];
+        arr[arr.length - 1 - i] = temp;
+    }
+    return arr;
+}
+let x = [1, 2, 3, 4, 5, 6];
+reverseArr(x);
+
+//11
+const outlookNegative = arr => {
+    let negarr = [];
+    for (var i = 0; i < arr.length; i++) {
+        negarr.push(arr[i] - (arr[i] * 2);
+    }
+    return negarr;
+}
+let x = [1, 2, 3, 4, 5];
+outlookNegative(x);
+
+//12
+const alwaysHungry = arr => {
+    let foodcount = 0;
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] === "food") {
+            console.log("yummy");
+            foodcount += 1;
+        }
+    }
+    if (foodcount === 0) {
+        console.log("I'm hungry");
+    }
+}
+let x = [1, 2, 3, 4, "food"];
+alwaysHungry(x);
+
+//13
+const swapTowardsCenter = arr => {
+    let temp = 0;
+    for (var i = 0; i < arr.length / 2; i++) {
+        if (i % 2 === 0) {
+            temp = arr[i];
+            arr[i] = arr[arr.length - 1 - i];
+            arr[arr.length - 1 - i] = temp;
+        }
+    }
+    return arr;
+}
+let x = [1, 2, 3, 4, 5, 6];
+swapTowardsCenter(x);
+
+//14
+const scaleTheArr = (arr, num) => {
+    for (var i = 0; i < arr.length; i++) {
+        arr[i] = arr[i] * num;
+    }
+    return arr;
+}
+let x = [1, 2, 3, 4, 5];
+scaleTheArr(x, 5);
