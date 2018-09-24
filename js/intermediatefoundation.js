@@ -18,7 +18,7 @@ const factorial = num => {
 }
 factorial(num);
 
-//3 Fobinacci
+//3 Fibonacci
 const fibonacci = idx => {
     let fibosum = 0;
     if (idx > 1) {
