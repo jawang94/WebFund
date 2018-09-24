@@ -11,8 +11,8 @@
 		background-color:black;
 	}
 	.row div{
-		width:50px;
-		height:50px;
+		width:100px;
+		height:100px;
 		display:inline-block;
 	}
 	.white{
@@ -76,8 +76,8 @@
 		{
 			// console.log('Coordinate Clicked', e.x, e.y);
 
-			var x = Math.floor(e.x/50);
-			var y = Math.floor(e.y/50);
+			var x = Math.floor(e.x/100);
+			var y = Math.floor(e.y/100);
 
 			// console.log('X, Y', x, y);
 			// console.log('Original Color', world[y][x]);
@@ -88,12 +88,19 @@
 
 		function fill(x,y,original_color, color)
 		{
+			if(y<0 || y>=world.length || x<0 || x>=10){
+				return false;
+			}
 
-			//your recursion codes here
+			if(world[y][x] !== original_color){
+				return false;
+			}
 
 			world[y][x] = color;
-
-			// your recursion codes here
+			fill(x,y-1,original_color, color)
+			fill(x,y+1,original_color, color)
+			fill(x-1,y,original_color, color)
+			fill(x+1,y,original_color, color)	
 
 			drawWorld();
 			
