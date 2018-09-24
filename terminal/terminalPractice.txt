@@ -1,0 +1,36 @@
+Last login: Mon Sep 24 08:57:28 on ttys001
+Jasons-MacBook-Pro-2:~ home$ cd desktop
+Jasons-MacBook-Pro-2:desktop home$ mkdir terminalpractice
+Jasons-MacBook-Pro-2:desktop home$ cd terminalpractice/
+Jasons-MacBook-Pro-2:terminalpractice home$ touch index.html style.css commands.txt
+Jasons-MacBook-Pro-2:terminalpractice home$ ls
+commands.txt	index.html	style.css
+Jasons-MacBook-Pro-2:terminalpractice home$ mv index.html index_2.html
+Jasons-MacBook-Pro-2:terminalpractice home$ ls
+commands.txt	index_2.html	style.css
+Jasons-MacBook-Pro-2:terminalpractice home$ mv index_2.html index.html
+Jasons-MacBook-Pro-2:terminalpractice home$ ls
+commands.txt	index.html	style.css
+Jasons-MacBook-Pro-2:terminalpractice home$ copy index.html index_2.html
+-bash: copy: command not found
+Jasons-MacBook-Pro-2:terminalpractice home$ cp index.html index_2.html
+Jasons-MacBook-Pro-2:terminalpractice home$ ls
+commands.txt	index.html	index_2.html	style.css
+Jasons-MacBook-Pro-2:terminalpractice home$ cd ..
+Jasons-MacBook-Pro-2:desktop home$ mkdir destination
+Jasons-MacBook-Pro-2:desktop home$ mv index_2.html destination/index_2.html
+mv: rename index_2.html to destination/index_2.html: No such file or directory
+Jasons-MacBook-Pro-2:desktop home$ cd terminalpractice/
+Jasons-MacBook-Pro-2:terminalpractice home$ ls
+commands.txt	index.html	index_2.html	style.css
+Jasons-MacBook-Pro-2:terminalpractice home$ mv index_2.html ../destination/index_2.html
+Jasons-MacBook-Pro-2:terminalpractice home$ cd ..
+Jasons-MacBook-Pro-2:desktop home$ cd destination/
+Jasons-MacBook-Pro-2:destination home$ ls
+index_2.html
+Jasons-MacBook-Pro-2:destination home$ cd ..
+Jasons-MacBook-Pro-2:desktop home$ rm -rf destination
+Jasons-MacBook-Pro-2:desktop home$ ls
+BeltExams		WebFund			markov_python
+PreDojo			documents		terminalpractice
+Jasons-MacBook-Pro-2:desktop home$ 
