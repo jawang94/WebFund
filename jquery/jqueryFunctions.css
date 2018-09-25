@@ -1,0 +1,271 @@
+/* * {
+    outline: 1px solid pink;
+} */
+.red {
+    color: red;
+}
+.yellow {
+    color: yellow;
+}
+
+#container {
+    padding: 10px;
+    height: 1000px;
+    width: 1000px;
+}
+
+    #container #top {
+        background-color: #2e5073;
+        width: auto;
+        height: 600px;
+        padding: 10px;
+    }
+
+        #container #top #intro {
+            width: 960px;
+            height: 150px;
+            padding: 10px;
+        }
+
+            #container #top #intro #images {
+                display: inline-block;
+                width: 500px;
+                height: auto;
+            }
+
+            #container #top #intro .image {
+                display: inline-block;
+                width: 400px;
+                height: auto;
+                padding: 20px 0px 0px 20px;
+            }
+
+            #container #top #intro #selector {
+                width: 250px;
+                display: inline-block;
+                height: 100px;
+                vertical-align: top;
+                margin-left: 150px;
+            }
+
+                #container #top #intro #selector #sizeselect {
+                    display: inline-block;
+                    margin-left: 83px;
+                    font-size: 16px;
+                    margin-bottom: 5px;
+                    color: white;
+                }
+
+                    #sizeselect a {
+                        color: gold;
+                    }
+
+                #container #top #intro #search {
+                    display: inline-block;
+                    width: 280px;
+                    height: 41px;
+                    padding: 12px;
+                    background-color: rgb(68,68,68);
+                    border-radius: 10px;
+                    box-shadow: 2px 2px;
+                }
+
+                    #container #top #intro #search #searchbar {
+                        padding: 1px;
+                        border: none;
+                        margin-left: 20px;
+                        font-size: 17px;
+                        display: inline-block;
+                    }
+
+                        #container #top #intro #search #searchbar input {
+                            height: 30px;
+                            width: 200px;
+                            text-align: center;
+                            font-size: 20px;
+                            border-radius: 8px;
+                            border: grey;
+                            border-style: inset;
+                        }
+
+                    #container #top #intro #search #go {
+                        display: inline-block;
+                        background-color: rgb(46,80,115);
+                        font-size: 20px;
+                        height: 25px;
+                        width: 40px;
+                        border-radius: 8px;
+                        border: grey;
+                        border-style: inset;
+                        vertical-align: top;
+                        margin-top: 5px;
+                    }
+
+                        #container #top #intro #search #go a {
+                            color: white;
+                            font-size: 18px;
+                            margin-left: 6px;
+                            margin-top: 4px;
+                            text-decoration: none;
+                            padding: 3px;
+                        }
+
+        #container #top #content {
+            width: auto;
+            height: 425px;
+            padding: 0px;
+        }
+
+            #container #top #content #menubar {
+                width: 870px;
+                height: 60px;
+                background-color: rgb(77,122,169);
+                display: block;
+                margin-left: 70px;
+                border-radius: 8px;
+                border: black;
+                border-style: inset;
+            }
+
+                #container #top #content #menubar .box {
+                    display: inline-block;
+                    height: 60px;
+                    width: auto;
+                    font-size: 23px;
+                    color: white;
+                    padding: 15px;
+                    margin-left: 15px;
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                }
+
+            #container #top #content #list {
+                padding: 10px;
+                margin-bottom: 5000px;
+                height: 200px;
+                width: 300px;
+                margin-left: 5px;
+                display: inline-block;
+            }   
+
+                #container #top #content #list .lists {
+                    color: white;
+                    list-style-type: none;
+                    font-size: 20px;
+                    line-height: 30px;
+                    text-align: center;
+                    vertical-align: top;
+
+                }
+
+                    #container #top #content #list .lists li{
+                        color: gold;
+                    }
+
+                    #container #top #content #list .lists a {
+                        vertical-align: top;
+                        color: white;
+                    }
+
+            #container #top #content #text1 {
+                display: inline-block;
+                height: 80px;
+                width: 600px;
+                vertical-align: top;
+                text-align: center;
+                font-size: 16px;
+                padding: 10px;
+                padding-top: 20px;
+                color: white;
+            }
+
+                #container #top #content #text1 li {
+                    color: gold;
+                    font-size: 24px;
+                    list-style: none;
+                    margin-right: 50px;
+                    font-style: italic;
+                    padding: 5px;
+                }
+
+    #container #middle {
+        background-color: white;
+        width: auto;
+        height: 250px;
+    }
+
+        #container #middle #leftmiddle {
+            display: inline-block;
+            height: 230px;
+            width: 400px;
+            text-align: center;
+            padding: 0px 80px 20px 0px;
+            margin-left: 50px;
+            font-size: 17px;
+            border-top: 5px solid skyblue;
+            vertical-align: top;
+            line-height: 20px;
+        }
+
+            #leftmiddle a {
+                text-decoration: none;
+            }
+
+        #container #middle #rightmiddle {
+            display: inline-block;
+            height: 220px;
+            width: 350px;
+            text-align: center;
+            padding: 0px 50px 20px 50px;
+            font-size: 17px;
+            border-top: 5px solid skyblue;
+            vertical-align: top;
+            line-height: 17px;
+        }
+
+            #rightmiddle a {
+                text-decoration: none;
+            }
+
+    #container #bottom {
+        background-image: linear-gradient(#2e5073,#39A6A8);
+        width: auto;
+        height: 100px;
+        padding: 20px 20px 20px 40px;
+    }
+
+        #container #bottom #leftbottom {
+            display: inline-block;
+            width: 300px;
+            height: 100px;
+            vertical-align: top;
+            text-align: center;
+            font-size: 20px;
+            padding-top: 30px;
+        }
+
+        #container #bottom #middlebottom {
+            display: inline-block;
+            width: 300px;
+            height: 100px;
+            vertical-align: top;
+            text-align: center;
+            padding: 5px;
+            font-size: 20px;
+            padding-top: 30px;
+        }
+
+        #container #bottom #rightbottom {
+            display: inline-block;
+            width: 300px;
+            height: 100px;
+            vertical-align: top;
+            text-align: center;
+            padding-top: 30px;
+            font-size: 20px;
+            padding-top: 30px;
+        }
+
+            #container #bottom a {
+                text-decoration: none;
+                color: white;
+            }
