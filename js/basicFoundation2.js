@@ -139,7 +139,7 @@ reverseArr(x);
 const outlookNegative = arr => {
     let negarr = [];
     for (var i = 0; i < arr.length; i++) {
-        negarr.push(arr[i] - (arr[i] * 2);
+        negarr.push(arr[i] - (arr[i] * 2));
     }
     return negarr;
 }

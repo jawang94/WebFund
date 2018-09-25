@@ -143,11 +143,11 @@ y = printSum(255)
 console.log(y);
 
 //PrintSumArray
-function printSumArray(x){
+function printSumArray(x) {
     var sum = 0;
-    for(var i=0; i<x.length; i++) {
+    for (var i = 0; i < x.length; i++) {
         sum += x[i];
     }
     return sum;
 }
-console.log(printSumArray([1,2,3])); 
+console.log(printSumArray([1, 2, 3]));
