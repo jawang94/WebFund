@@ -1,0 +1,33 @@
+/* * {
+    outline: 1px solid pink;
+} */
+
+#container {
+    background-color: black;
+    width: 450px;
+    height: 500px;
+    padding: 25px;
+}
+
+img {
+    display: inline-block;
+    position: static;
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+
+button {
+    position: absolute;
+    top: 470px;
+    left: 190px;
+    margin: 0 0 0 10px;
+    width: 100px;
+    height: 30px;
+    background-color: lightgreen;
+    border: 3px solid red;
+    border-radius: 5px;
+}
