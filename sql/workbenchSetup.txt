@@ -1,0 +1,13 @@
+use twitter;
+
+INSERT INTO users (first_name,last_name)
+VALUES ('Jason','Wang');
+
+SELECT * FROM users;
+
+UPDATE users 
+SET first_name = 'notJason', last_name='notWang'
+WHERE users.id = 6;
+
+DELETE FROM users 
+WHERE id = 6;
