@@ -1,0 +1,94 @@
+1.
+SELECT SUM(amount) as total_revenue
+from billing
+where charged_datetime >= '2011/03/01'
+AND charged_datetime < '2011/04/01';
+
+2.
+SELECT SUM(amount) AS total_revenue_client_2
+FROM billing
+JOIN clients
+ON billing.client_id = clients.client_id
+WHERE billing.client_id = 2;
+
+3.
+SELECT sites.domain_name, clients.last_name, clients.first_name
+FROM sites
+JOIN clients
+ON sites.client_id = clients.client_id
+WHERE sites.client_id = 10;
+
+4.
+SELECT clients.client_id, COUNT(sites.domain_name) AS total_sites, MONTHNAME(created_datetime), YEAR(CREATED_DATETIME)
+FROM sites
+JOIN clients
+ON sites.client_id = clients.client_id
+WHERE sites.client_id = 20;
+
+5.
+SELECT sites.domain_name, COUNT(leads.first_name) as total_leads
+FROM sites
+LEFT JOIN leads
+ON sites.site_id = leads.site_id
+WHERE leads.registered_datetime >= '2011-01-01'
+AND leads.registered_datetime <= '2011-02-15'
+GROUP BY sites.domain_name
+ORDER BY total_leads desc;
+
+6.
+SELECT clients.first_name,clients.last_name, COUNT(leads.first_name) as leads_generated
+FROM clients
+JOIN sites
+ON clients.client_id = sites.client_id
+JOIN leads
+ON leads.site_id = sites.site_id
+GROUP BY clients.client_id;
+
+7.
+SELECT clients.first_name,clients.last_name, COUNT(leads.leads_id) as leads_generated, MONTHNAME(registered_datetime) as month
+FROM clients
+JOIN sites
+ON clients.client_id = sites.client_id
+JOIN leads
+ON leads.site_id = sites.site_id
+WHERE leads.registered_datetime >= '2011-01-01'
+AND leads.registered_datetime < '2011-07-01'
+GROUP BY leads.leads_id;
+
+8.
+SELECT clients.first_name,clients.last_name, COUNT(leads.first_name) as leads_generated, MONTHNAME(registered_datetime) as month
+FROM clients
+JOIN sites
+ON clients.client_id = sites.client_id
+JOIN leads
+ON leads.site_id = sites.site_id
+WHERE leads.registered_datetime >= '2011-01-01'
+AND leads.registered_datetime < '2011-12-31'
+GROUP BY clients.client_id
+ORDER BY clients.client_id;
+
+SELECT clients.first_name,clients.last_name, sites.domain_name, COUNT(leads.first_name) as leads_generated
+FROM clients
+JOIN sites
+ON clients.client_id = sites.client_id
+JOIN leads
+ON leads.site_id = sites.site_id
+WHERE leads.registered_datetime >= '2011-01-01'
+AND leads.registered_datetime < '2011-12-31'
+GROUP BY sites.site_id
+ORDER BY clients.client_id;
+
+9.
+SELECT SUM(amount) as total_revenue, CONCAT(clients.first_name," ",clients.last_name) as client_name, MONTHNAME(charged_datetime) as month
+FROM billing
+JOIN clients
+ON billing.client_id = clients.client_id
+GROUP BY client_name, month
+ORDER BY billing.client_id;
+
+10.
+SELECT CONCAT(clients.first_name," ",clients.last_name) as client_name, GROUP_CONCAT(" ",sites.domain_name) as sites_owned
+FROM clients
+JOIN sites
+ON clients.client_id = sites.client_id
+GROUP BY sites.client_id;
