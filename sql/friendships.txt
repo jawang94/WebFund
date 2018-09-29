@@ -1,0 +1,71 @@
+0.
+SELECT users.first_name, users.last_name, users2.first_name as friend_first_name, users2.last_name as friend_last_name
+FROM users
+LEFT JOIN Friendships
+ON users.id = Friendships.friend_1_id
+LEFT JOIN users as users2
+ON Friendships.friend_2_id = users2.id;
+
+1.
+SELECT users2.first_name as friend_first_name, users2.last_name as friend_last_name
+FROM users
+LEFT JOIN Friendships
+ON users.id = Friendships.friend_1_id
+LEFT JOIN users as users2
+ON Friendships.friend_2_id = users2.id
+WHERE users.first_name = 'Kermit';
+
+2.
+SELECT COUNT(users2.first_name) as friendship_count
+FROM users
+LEFT JOIN Friendships
+ON users.id = Friendships.friend_1_id
+LEFT JOIN users as users2
+ON Friendships.friend_2_id = users2.id;
+
+3.
+SELECT users.first_name, COUNT(users2.first_name) as friendship_count
+FROM users
+LEFT JOIN Friendships
+ON users.id = Friendships.friend_1_id
+LEFT JOIN users as users2
+ON Friendships.friend_2_id = users2.id
+GROUP BY users.first_name;
+
+4.
+INSERT INTO users (id,first_name,last_name)
+VALUES (6,'John','Smith');
+//EXECUTE
+INSERT INTO Friendships(friend_1_id,friend_2_id)
+VALUES (6,2);
+//EXECUTE
+INSERT INTO Friendships(friend_1_id,friend_2_id)
+VALUES (6,4);
+//EXECUTE
+INSERT INTO Friendships(friend_1_id,friend_2_id)
+VALUES (6,5);
+//EXECUTE
+
+5.
+SELECT users2.first_name as friend_first_name, users2.last_name as friend_last_name
+FROM users
+LEFT JOIN Friendships
+ON users.id = Friendships.friend_1_id
+LEFT JOIN users as users2
+ON Friendships.friend_2_id = users2.id
+WHERE users.first_name = 'ELI'
+ORDER BY users2.first_name desc;
+
+6.
+DELETE FROM FRIENDSHIPS 
+WHERE friend_1_id = 2 
+AND friend_2_id = 5;
+
+7.
+SELECT users.first_name, users2.first_name as friend_first_name
+FROM users
+LEFT JOIN Friendships
+ON users.id = Friendships.friend_1_id
+LEFT JOIN users as users2
+ON Friendships.friend_2_id = users2.id;
+
